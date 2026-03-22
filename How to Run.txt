@@ -1,0 +1,7 @@
+use python 3.10.0 64bit one
+create virtualenv and install the dependency from requirments.txt
+How to create virtualenv
+go to cmd prompt and type this command
+virtualenv -p python310 venv
+
+oce venv create activate it
