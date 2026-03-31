@@ -131,7 +131,8 @@ def predict_digit(image):
 
         try:
             img = torch.tensor(img)
-        except TypeError:
+        except Exception as e:
+            # Fallback for Numpy 2.x and PyTorch incompatibilities
             img = torch.tensor(img.tolist())
             
         img = img.float()
